@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Modal Overlay | Vanilla JS</title>
+  </head>
+  <body>
+    <div>
+      <button>Subscribe</button>
+      <!-- modal overlay -->
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div class="modal-close">X</div>
+          <div class="modal-content">
+            <h2>Subscribe now!</h2>
+            <p>Subscribe to get a free PDF!</p>
+            <form>
+              <p>
+                <label
+                  >Name:
+                  <input
+                    name="name"
+                    placeholder="Jane Doe"
+                    type="text"
+                    required
+                /></label>
+              </p>
+              <p>
+                <label
+                  >Email:
+                  <input
+                    placeholder="jane@example.com"
+                    type="email"
+                    name="custemail"
+                    required
+                /></label>
+              </p>
+              <p><button type="submit">Subscribe</button></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--  success overlay  -->
+      <div class="success-wrapper">
+        <div>
+          <p>Success! Thank you for subscribing to the newletter 🙏</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js "></script>
+  </body>
+</html>
